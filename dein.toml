@@ -35,6 +35,10 @@ repo = 'hail2u/vim-css3-syntax'
 repo = 'jelera/vim-javascript-syntax'
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'JulesWang/css.vim'
+[[plugins]]
+repo = 'cakebaker/scss-syntax.vim'
 
 [[plugins]]
 repo = 'Shougo/neomru.vim'
@@ -59,3 +63,18 @@ hook_add = '''
   " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
   au MyAutoCmd VimEnter * nested colorscheme space-vim-dark
 '''
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+
+[[plugins]]
+repo = 'tikhomirov/vim-glsl'
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'

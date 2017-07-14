@@ -242,13 +242,32 @@ inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 "*****************************************************************************
 "" Indent
 "*****************************************************************************
-set expandtab "タブ入力を複数の空白入力に置き換える
-set tabstop=2 "画面上でタブ文字が占める幅
-set shiftwidth=2 "自動インデントでずれる幅
-set softtabstop=2 "連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
-set autoindent "改行時に前の行のインデントを継続する
-set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
+filetype plugin indent on
+
+set shiftwidth=2
+set tabstop=2
+
+augroup indent
+  autocmd! FileType python setlocal shiftwidth=4 tabstop=4
+augroup END
+
+set autoindent
+set expandtab
+
 set nowrap
 
 let g:space_vim_dark_background = 233
 color space-vim-dark
+
+
+"*****************************************************************************
+"" Search
+"*****************************************************************************
+" 大文字小文字を区別しない
+let g:unite_enable_ignore_case = 1
+let g:unite_enable_smart_case = 1
+
+
+vmap <Enter> <Plug>(EasyAlign)
+
+set noswapfile
