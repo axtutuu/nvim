@@ -34,6 +34,16 @@ repo = 'hail2u/vim-css3-syntax'
 [[plugins]]
 repo = 'jelera/vim-javascript-syntax'
 [[plugins]]
+repo =  'mxw/vim-jsx'
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+[[plugins]]
+repo = 'tikhomirov/vim-glsl'
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+
+[[plugins]]
 repo = 'tpope/vim-fugitive'
 [[plugins]]
 repo = 'JulesWang/css.vim'
