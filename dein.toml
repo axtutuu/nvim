@@ -88,3 +88,6 @@ repo = 'mxw/vim-jsx'
 
 [[plugins]]
 repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'wakatime/vim-wakatime'
