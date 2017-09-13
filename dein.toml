@@ -91,3 +91,12 @@ repo = 'pangloss/vim-javascript'
 
 [[plugins]]
 repo = 'wakatime/vim-wakatime'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'wavded/vim-stylus'
+
+[[plugins]]
+repo = 'vim-perl/vim-perl'

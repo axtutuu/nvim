@@ -202,6 +202,8 @@ set number
 set ruler
 set t_Co=256
 
+au! BufNewFile,BufRead *.tx setf tt2html
+
 "*****************************************************************************
 """ Functions
 "*****************************************************************************
@@ -242,17 +244,22 @@ inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 "*****************************************************************************
 "" Indent
 "*****************************************************************************
-filetype plugin indent on
+" filetype plugin indent on
+set autoindent "改行時に前の行のインデントを継続する
+set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
+set showmatch
+set expandtab
+set smarttab
 
-set shiftwidth=2
+"タブ幅の設定 http://peace-pipe.blogspot.com/2006/05/vimrc-vim.html
 set tabstop=2
+set shiftwidth=4
+set softtabstop=0
+" set noexpandtab
 
 augroup indent
   autocmd! FileType python setlocal shiftwidth=4 tabstop=4
 augroup END
-
-set autoindent
-set expandtab
 
 set nowrap
 
@@ -271,3 +278,5 @@ let g:unite_enable_smart_case = 1
 vmap <Enter> <Plug>(EasyAlign)
 
 set noswapfile
+
+
