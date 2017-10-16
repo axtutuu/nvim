@@ -103,3 +103,6 @@ repo = 'vim-perl/vim-perl'
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'glidenote/memolist.vim'
