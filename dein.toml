@@ -100,3 +100,6 @@ repo = 'wavded/vim-stylus'
 
 [[plugins]]
 repo = 'vim-perl/vim-perl'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
