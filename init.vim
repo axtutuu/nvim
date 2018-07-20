@@ -46,7 +46,7 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 15
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <leader>nf :NERDTreeFind<CR>
-noremap <F1> :NERDTreeToggle<CR>
+noremap <ESC><ESC><ESC> :NERDTreeToggle<CR>
 
 "*****************************************************************************
 " Must Key Map
