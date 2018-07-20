@@ -236,9 +236,9 @@ else
   let g:neocomplcache_enable_underbar_completion = 1
 endif
 
-" <TAB>: completion.                                         
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"   
-inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>" 
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 
 
 "*****************************************************************************
@@ -257,9 +257,9 @@ set shiftwidth=4
 set softtabstop=0
 " set noexpandtab
 
-augroup indent
-  autocmd! FileType python setlocal shiftwidth=4 tabstop=4
-augroup END
+" augroup indent
+"   autocmd! FileType python setlocal shiftwidth=4 tabstop=4
+" augroup END
 
 set nowrap
 
