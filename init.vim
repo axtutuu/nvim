@@ -252,7 +252,7 @@ set expandtab
 set smarttab
 
 "タブ幅の設定 http://peace-pipe.blogspot.com/2006/05/vimrc-vim.html
-set tabstop=2
+set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 " set noexpandtab

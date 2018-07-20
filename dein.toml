@@ -103,3 +103,9 @@ repo = 'vim-perl/vim-perl'
 
 [[plugins]]
 repo = 'glidenote/memolist.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
