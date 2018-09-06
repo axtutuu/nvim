@@ -46,7 +46,7 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 15
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <leader>nf :NERDTreeFind<CR>
-noremap <ESC><ESC><ESC> :NERDTreeToggle<CR>
+noremap <F1> :NERDTreeToggle<CR>
 
 "*****************************************************************************
 " Must Key Map
@@ -61,12 +61,11 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 
 "" Copy/Paste/Cut
 set clipboard=unnamed,unnamedplus
-
 "*****************************************************************************
 " StatusLine
 "*****************************************************************************"
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'challenger_deep',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
       \   'right': [ [ 'syntastic', 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
@@ -252,8 +251,8 @@ set expandtab
 set smarttab
 
 "タブ幅の設定 http://peace-pipe.blogspot.com/2006/05/vimrc-vim.html
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set softtabstop=0
 " set noexpandtab
 
@@ -263,10 +262,22 @@ set softtabstop=0
 
 set nowrap
 
-let g:space_vim_dark_background = 233
-color space-vim-dark
-
-
+" let g:space_vim_dark_background = 300
+" hi Normal     ctermbg=54 guibg=#1e1c31
+" hi LineNr       ctermbg=17 guibg=#1e1c31
+" hi Comment guifg=#5C6370 ctermfg=59
+" color space-vim-dark
+" color challenger-deep
+colorscheme challenger_deep
+hi LineNr ctermfg=228 guifg=#ffe9aa
+hi Normal ctermfg=253 ctermbg=233 guifg=#cbe3e7 guibg=#230056
+hi CursorLine cterm=underline
+hi ColorColumn ctermfg=232 ctermbg=141 guifg=#100E23 guibg=#c991e1
+" hi CursorLine cterm=underline ctermfg=120 guifg=#95ffa4
+set cursorline
+set colorcolumn=80
+" colorscheme colibri
+"
 "*****************************************************************************
 "" Search
 "*****************************************************************************
@@ -274,11 +285,9 @@ color space-vim-dark
 let g:unite_enable_ignore_case = 1
 let g:unite_enable_smart_case = 1
 
-
 vmap <Enter> <Plug>(EasyAlign)
 
 set noswapfile
-
 
 "*****************************************************************************
 "" Memo
@@ -293,3 +302,5 @@ let g:memolist_prompt_categories = 1
 let g:memolist_qfixgrep = 1
 let g:memolist_vimfiler = 1
 let g:memolist_template_dir_path = "~/Dropbox/memo"
+
+autocmd FileType vue syntax sync fromstart

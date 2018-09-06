@@ -67,12 +67,6 @@ repo = 'isRuslan/vim-es6'
 
 [[plugins]]
 repo = 'liuchengxu/space-vim-dark'
-hook_add = '''
-  set background=dark
-  " colorscheme 設定は source 後に行う必要があるので VimEnter で行う。
-  " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
-  au MyAutoCmd VimEnter * nested colorscheme space-vim-dark
-'''
 
 [[plugins]]
 repo = 'slim-template/vim-slim'
@@ -112,3 +106,19 @@ repo = 'Shougo/vimfiler.vim'
 
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'nikvdp/ejs-syntax'
+
+[[plugins]]
+repo = 'challenger-deep-theme/vim'
+name = 'challenger-deep'
+
+[[plugins]]
+repo = 'archseer/colibri.vim'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
