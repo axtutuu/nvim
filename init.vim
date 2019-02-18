@@ -270,7 +270,6 @@ set nowrap
 " color challenger-deep
 colorscheme challenger_deep
 hi LineNr ctermfg=228 guifg=#ffe9aa
-hi Normal ctermfg=253 ctermbg=233 guifg=#cbe3e7 guibg=#230056
 hi CursorLine cterm=underline
 hi ColorColumn ctermfg=232 ctermbg=141 guifg=#100E23 guibg=#c991e1
 " hi CursorLine cterm=underline ctermfg=120 guifg=#95ffa4
@@ -278,7 +277,11 @@ set cursorline
 set colorcolumn=80
 " colorscheme colibri
 "
-"*****************************************************************************
+" visulaモードで選択してからのインデント調整で調整後に選択範囲を開放しない
+vnoremap > >gv
+vnoremap < <gv
+
+"**********************************************************************************
 "" Search
 "*****************************************************************************
 " 大文字小文字を区別しない
@@ -304,3 +307,15 @@ let g:memolist_vimfiler = 1
 let g:memolist_template_dir_path = "~/Dropbox/memo"
 
 autocmd FileType vue syntax sync fromstart
+
+"*****************************************************************************
+"" Search
+"*****************************************************************************
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|node_modules\|vendor\|public\/system\|data\|log\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$'
+  \ }
+
+tnoremap <silent> <ESC> <C-\><C-n>
+
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
